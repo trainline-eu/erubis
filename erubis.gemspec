@@ -6,13 +6,14 @@
 ###
 
 require 'rubygems' unless defined?(Gem)
+require_relative "lib/erubis/version"
 
 spec = Gem::Specification.new do |s|
   ## package information
   s.name        = "erubis"
   s.author      = "makoto kuwata"
   s.email       = "kwa(at)kuwata-lab.com"
-  s.version     = "$Release$"
+  s.version     = Erubis::VERSION
   s.platform    = Gem::Platform::RUBY
   s.homepage    = "http://www.kuwata-lab.com/erubis/"
   s.summary     = "a fast and extensible eRuby implementation which supports multi-language"
